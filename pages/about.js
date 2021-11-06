@@ -1,3 +1,4 @@
+import Footer from '../comps/footer'
 const About= () => {
     return (
         <div>
