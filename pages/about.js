@@ -2,7 +2,8 @@ import Footer from '../comps/footer'
 const About= () => {
     return (
         <div>
-          <h1>About</h1>  
+          <title>About This Project</title>
+          <h1 class="aboutTitle">About</h1>  
           <p>Proyek preketek: manusia tulang lunak.</p>
           <p>Proyek preketek: manusia tulang lunak.</p>
         </div>

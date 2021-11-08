@@ -72,13 +72,13 @@ export default function Home() {
           </a>
         </div>
         <div>
-          <h1>About &rarr;</h1>  
-          <p>Proyek preketek: manusia tulang lunak.</p>
-          <p>Proyek preketek: manusia tulang lunak.</p>
+          <h1 className={styles.title}>About &rarr;</h1>  
+          <p className={styles.text}>Proyek preketek: manusia tulang lunak.</p>
+          <p className={styles.text}>Proyek preketek: manusia tulang lunak.</p>
         </div>
       </main>
       <Link href="/ninjas">
-      <a>See Ninja Listing</a>
+      <a className={styles.btn}>See Ninja Listing</a>
       </Link>
       {/* <footer className={styles.footer}>
         <a

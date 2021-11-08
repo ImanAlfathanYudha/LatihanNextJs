@@ -108,6 +108,21 @@
   margin-left: 0.5rem;
 }
 
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}
+
+.text {
+  color: #777;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
