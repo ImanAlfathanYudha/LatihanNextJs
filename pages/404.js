@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import {useEffect} from 'react' 
 import {useRouter} from 'next/router' 
-
+// tactical notes. dipelajari pd tanggal 8 november 2021
 const NotFound= () => {
     const router = useRouter()
     console.log("Tes useRouter ",useRouter)
