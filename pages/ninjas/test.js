@@ -1,12 +1,11 @@
 import styles from '../../styles/Ninjas.module.css'
 export const getStaticProps = async () => {
-  //entar pas dipuka di laptop sebelah buat tactical notes.
-  // const res = await fetch('https://jsonplaceholder.typicode.com/users/1/albums');
-  // const data = await res.json();
-
-  // return {
-  //   props: { listAlbum: data }
-  // }
+  //tactical notes 9 november.
+  const res = await fetch('https://jsonplaceholder.typicode.com/users/1/albums');
+  const data = await res.json();
+  return {
+    props: { listAlbum: data }
+  }
 }
 
 const Test= ({listAlbum}) => {
