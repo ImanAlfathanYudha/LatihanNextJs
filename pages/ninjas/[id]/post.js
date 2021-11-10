@@ -1,18 +1,18 @@
+//Buat bikin halaman ninja yg isinya post milik user(get list post by user)
 import styles from '../../../styles/Ninjas.module.css'
-
 export const getStaticPaths = async () => {
-    //jangan lupa bikin tactical notes dan uncomment method di bawah dan apus2in console hehe..
-    // const res = await fetch('https://jsonplaceholder.typicode.com/users/');
-    // const data = await res.json();
-    // const paths = data.map(ninja=>{
-    //     return {
-    //         params: {id:ninja.id.toString()}
-    //     }
-    // })
-    // console.log("Tes paths ",paths)
-    // return {
-    //   paths, fallback: false
-    // }
+    //tactical notes 1o november 2021
+    const res = await fetch('https://jsonplaceholder.typicode.com/users/');
+    const data = await res.json();
+    const paths = data.map(ninja=>{
+        return {
+            params: {id:ninja.id.toString()}
+        }
+    })
+    console.log("Tes paths ",paths)
+    return {
+      paths, fallback: false
+    }
 }
 
 export const getStaticProps = async (context) => {
