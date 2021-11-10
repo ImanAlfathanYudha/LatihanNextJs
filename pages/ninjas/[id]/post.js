@@ -9,19 +9,15 @@ export const getStaticPaths = async () => {
             params: {id:ninja.id.toString()}
         }
     })
-    console.log("Tes paths ",paths)
     return {
       paths, fallback: false
     }
 }
 
 export const getStaticProps = async (context) => {
-    console.log("Tes getStaticProps ", context)
     const id = context.params.id;
     const res = await fetch('https://jsonplaceholder.typicode.com/users/'+id+'/posts');
-    console.log("Tes res isis apa ", res)
     const data = await res.json();
-    console.log("Tes data ", data)
     return {
         props: { posts: data }
     }
