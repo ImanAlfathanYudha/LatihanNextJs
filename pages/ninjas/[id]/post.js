@@ -19,15 +19,15 @@ export const getStaticProps = async (context) => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/'+id+'/posts');
     const data = await res.json();
     return {
-        props: { posts: data }
+        props: { posts: data, id:id }
     }
 }
 
-const UserPost= ({posts}) => {
+const UserPost= ({posts, id}) => {
     console.log("Tes posts ", posts)
     return (
         <div>
-        <h1>Post Pages</h1>
+        <h1>Post Pages {id}</h1>
           {posts.map(post=>(
               <div key={post.id} className={styles.single}>
                   <h3>{post.title}</h3>

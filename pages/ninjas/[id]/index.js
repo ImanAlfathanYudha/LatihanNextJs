@@ -1,4 +1,5 @@
 //Buat bikin halaman ninja yg detail (get user detail)
+import {useRouter} from 'next/router' 
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/');
     const data = await res.json();
@@ -26,9 +27,11 @@ export const getStaticProps = async (context) => {
 
 const Details= ({ninja}) => {
     console.log("Tes ninja ", ninja)
+    const router = useRouter()
+    const ninjaId = router.query.id
     return (
         <div>
-            <h1>Details Page</h1>
+            <h1>Details Page {ninjaId}</h1>
             <h3>{ninja.name}</h3>
             <p>{ninja.email}</p>
             <p>{ninja.website}</p>
