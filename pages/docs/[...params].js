@@ -3,7 +3,7 @@ import {useRouter} from 'next/router'
 function Doc() {
     const router = useRouter()
     const {params=[]} = router.query
-    console.log("Tes params ",params)
+    console.log("Tes tacitcal notes 25 Nov 2021 params ",params)
     if (params.length==2){ 
         return (
             <div>
