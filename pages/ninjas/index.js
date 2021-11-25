@@ -21,7 +21,7 @@ const Ninjas= ({ninjas}) => {
                 <Link href={'/ninjas/' + ninja.id} key={ninja.id}><a><h3>{ninja.name}</h3></a></Link>
                 <Link href={'/ninjas/' + ninja.id+'/post'} key={ninja.id}>Posts</Link>
                 <br></br>
-                <Link href={'/ninjas/' + ninja.id+'/post'} key={ninja.id} replace>BACK</Link>
+                <Link href={'/ninjas/' + ninja.id+'/post'} key={ninja.id} replace><a><b>BACK</b></a></Link>
               </div>
             ))}
         </div>
