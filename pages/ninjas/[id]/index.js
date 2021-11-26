@@ -1,5 +1,7 @@
 //Buat bikin halaman ninja yg detail (get user detail)
 import {useRouter} from 'next/router' 
+import styles from '../../../styles/Home.module.css'
+
 export const getStaticPaths = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users/');
     const data = await res.json();
@@ -29,8 +31,8 @@ const Details= ({ninja}) => {
     console.log("Tes ninja ", ninja)
     const router = useRouter()
     const ninjaId = router.query.id
+    //tactical notes. adding handleclick 26 Nov 2021
     const handleClick = ()=> {
-        console.log("Tes placing your post.")
         router.push('/ninjas/'+ninjaId+'/post')
     }
     return (
@@ -40,7 +42,7 @@ const Details= ({ninja}) => {
             <p>{ninja.email}</p>
             <p>{ninja.website}</p>
             <p>{ninja.address.city}</p>
-            <button onClick={handleClick}>Post</button>
+            <a className={styles.btnPost} href="" onClick={handleClick}>Post</a>
         </div>
     )
 }
