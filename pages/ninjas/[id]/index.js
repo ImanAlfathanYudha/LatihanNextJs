@@ -29,6 +29,10 @@ const Details= ({ninja}) => {
     console.log("Tes ninja ", ninja)
     const router = useRouter()
     const ninjaId = router.query.id
+    const handleClick = ()=> {
+        console.log("Tes placing your post.")
+        router.push('/ninjas/'+ninjaId+'/post')
+    }
     return (
         <div>
             <h1>Details Page {ninjaId}</h1>
@@ -36,6 +40,7 @@ const Details= ({ninja}) => {
             <p>{ninja.email}</p>
             <p>{ninja.website}</p>
             <p>{ninja.address.city}</p>
+            <button onClick={handleClick}>Post</button>
         </div>
     )
 }
