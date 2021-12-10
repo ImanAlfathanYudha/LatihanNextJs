@@ -2,6 +2,7 @@
 import styles from '../../../styles/Ninjas.module.css'
 export const getStaticPaths = async () => {
     //tactical notes 1o november 2021
+    //access token terbaru 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
     const res = await fetch('https://jsonplaceholder.typicode.com/users/');
     const data = await res.json();
     const paths = data.map(ninja=>{
