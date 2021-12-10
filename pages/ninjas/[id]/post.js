@@ -24,7 +24,6 @@ export const getStaticProps = async (context) => {
 }
 
 const UserPost= ({posts, id}) => {
-    console.log("Tes posts ", posts)
     return (
         <div>
         <h1>Post Pages {id}</h1>
