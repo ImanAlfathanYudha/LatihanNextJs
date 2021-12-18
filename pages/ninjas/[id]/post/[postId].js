@@ -39,7 +39,7 @@ const postIDDetail= ({props}) => {
     // const postDetail = getPostDetail(props.posts, postId)
     return (
         <div>
-        <h1>Post Pages id detail</h1>
+        <h1>Post Pages id detail on Ninja Page</h1>
               <div>
                   <h3>ID ninja {id}</h3>
                     <p>productId {postId}</p>

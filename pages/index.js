@@ -71,6 +71,10 @@ export default function Home() {
             <h2>Instagram &rarr;</h2>
             <p>Portofolio.</p>
           </a>
+          <Link href="/ninjas"><a className={styles.card}>
+            <h2>Ninja versi Card &rarr;</h2>
+            <p>Versi card</p>
+          </a></Link>
         </div>
         <div>
           <h1 className={styles.title}>About &rarr;</h1>  
