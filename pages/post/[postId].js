@@ -16,6 +16,22 @@ export async function getStaticProps(context) {
     }
 }
 
+//fallback kalo blocking
+// export async function getStaticPaths() {
+//     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+//     const data = await res.json();
+//     const data2 = data.slice(0,4)
+//     const paths = data2.map(post=>{
+//         return {
+//             params: {postId:post.id.toString()}
+//         }
+//     })
+//     return {
+//         paths: paths, fallback: 'blocking'
+//     }
+// }
+
+//fallback kalo true
 export async function getStaticPaths() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
@@ -30,6 +46,7 @@ export async function getStaticPaths() {
     }
 }
 
+//fallback kalo false
 // export async function getStaticPaths() {
 //     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
 //     const data = await res.json();
