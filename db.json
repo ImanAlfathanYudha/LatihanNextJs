@@ -40,12 +40,18 @@
       "title":"Pintu Kemana Saja",
       "price":3000000,
       "description":"Pintu kemana saja adalah alat yang paling populer dan sering digunakan di seri ini. Fungsi utama dari alat ini adalah untuk memindahkan pengguna ke lokasi apapun yang mereka inginkan. Pintu tersebut dikatakan hanya dapat menempuh jarak maksimum 100.000 tahun cahaya."
-  },
-  {
-    "id":4,
-    "title":"Lem Gattai",
-    "price":3000000,
-    "description":"Alat ini dapat menggabungkan dua makhluk hidup menjadi satu wujud yang baru."
-}
-]
+    },
+    {
+      "id":5,
+      "title":"Lem Gattai",
+      "price":3000000,
+      "description":"Alat ini dapat menggabungkan dua makhluk hidup menjadi satu wujud yang baru."
+    },
+    {
+      "id":6,
+      "title":"Pistol perubah tubuh sebagian",
+      "price":5000000,
+      "description":"Alat ini dapat merubah sebagian tubuh yang kita/orang lain miliki."
+    }
+  ]
 }
