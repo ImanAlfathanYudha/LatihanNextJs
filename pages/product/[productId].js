@@ -3,14 +3,12 @@ import {useRouter} from 'next/router'
 export async function getStaticProps(context) {
     const id = context.params.productId;
     const res = await fetch('http://localhost:4000/product/'+id);
-    console.log("Tes getStaticProps klo fallback true", id)
     const data = await res.json();
     if (!data.id) {
         return {
             notFound:true
         }
     }
-    console.log("Tes getStaticProps klo fallback true", id)
     return {
         props: { productDetail: data}
     }
