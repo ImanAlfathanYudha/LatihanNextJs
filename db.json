@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "product":[
+    {
+        "id":1,
+        "title":"Pedang Pembagi Setengah",
+        "price":20000,
+        "description":"Alat ini cocok banget dipakai kamu yang selalu sibuk, atau buat kamu yang mageran. Dengan alat ini kamu bisa membelah benda apa pun, termasuk diri sendiri dengan risiko badanmu akan sedikit mengecil."
+    },
+    {
+        "id":2,
+        "title":"Kain Pembungkus Waktu",
+        "price":20000,
+        "description":"Punya barang lama yang sudah enggak enak dilihat, dengan kain pembungkus ini barang-barang lamamu akan berubah menjadi baru lagi."
+    },
+    {
+        "id":3,
+        "title":" Konyaku Penerjemah",
+        "price":30000,
+        "description":"Dengan makan konyaku ini kamu bakal langsung bisa mengerti berbagai bahasa lho. Asik enggak tuh?"
+    },
+    {
+      "id":4,
+      "title":"Pintu Kemana Saja",
+      "price":3000000,
+      "description":"Pintu kemana saja adalah alat yang paling populer dan sering digunakan di seri ini. Fungsi utama dari alat ini adalah untuk memindahkan pengguna ke lokasi apapun yang mereka inginkan. Pintu tersebut dikatakan hanya dapat menempuh jarak maksimum 100.000 tahun cahaya."
+  },
+  {
+    "id":4,
+    "title":"Lem Gattai",
+    "price":3000000,
+    "description":"Alat ini dapat menggabungkan dua makhluk hidup menjadi satu wujud yang baru."
+}
+]
+}
