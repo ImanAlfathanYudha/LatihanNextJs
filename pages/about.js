@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import styles from '../styles/Home.module.css'
 
 const About= () => {
     return (
@@ -10,7 +11,7 @@ const About= () => {
       </Head>
         <div>
           <title>About This Project</title>
-          <h1 class="aboutTitle">About</h1>  
+          <h1 className={styles.aboutTitle}>About</h1>  
           <p>Proyek preketek: manusia tulang lunak.</p>
           <p>Proyek preketek: manusia tulang lunak.</p>
         </div>

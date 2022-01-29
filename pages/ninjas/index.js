@@ -17,12 +17,12 @@ const Ninjas= ({ninjas}) => {
     return (
         <div>
           <h1>All Ninjas</h1>
-          <Link href="/ninjas/test">
+          <Link href="/ninjas/test" passHref={true}>
             <a>Test tist</a>
           </Link>
             {ninjas.map((ninja)=>{
               return(
-                <div>
+                <div key={ninja.id}>
                   <Ninja ninja={ninja}></Ninja>
                 </div>
               )

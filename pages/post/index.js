@@ -15,7 +15,7 @@ function PostList ({posts}) {
         {posts.map((post)=>{
             return (
                 <div key={post.id} className={styles.single}>
-                <Link href={`post/${post.id}`}><h3>{post.id} {post.title}</h3></Link>
+                <Link href={`post/${post.id}`} passHref={true}><h3>{post.id} {post.title}</h3></Link>
             </div>
             )
         })}       
