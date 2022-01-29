@@ -18,7 +18,7 @@ function ProductList ({products}) {
             return (
                 <div key={product.id} className={styles.single}>
                 <Link href={`product/${product.id}`} passHref={true}><h3>{product.id} {product.title}</h3></Link>
-            </div>
+                </div>
             )
         })}       
         </>
