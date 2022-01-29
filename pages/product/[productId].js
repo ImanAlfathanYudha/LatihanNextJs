@@ -2,6 +2,7 @@ import {useRouter} from 'next/router'
 
 export async function getStaticProps(context) {
     const id = context.params.productId;
+    console.log("Tes regenerating product id ", id)
     const res = await fetch('http://localhost:4000/product/'+id);
     const data = await res.json();
     if (!data.id) {
@@ -10,7 +11,8 @@ export async function getStaticProps(context) {
         }
     }
     return {
-        props: { productDetail: data}
+        props: { productDetail: data},
+        revalidate:10,
     }
 }
 
