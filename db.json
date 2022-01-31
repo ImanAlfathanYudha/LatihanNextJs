@@ -16,6 +16,26 @@
   "profile": {
     "name": "typicode"
   },
+  "news": [
+    {
+      "id": 1,
+      "title": "Senam bersama yang dilakukan secara individu",
+      "description": "typicode",
+      "category": "sports"
+    },
+    {
+      "id": 2,
+      "title": "Atlet Karambol RI mendapatkan medali emas di Eropa",
+      "description": "typicode",
+      "category": "sports"
+    },
+    {
+      "id": 3,
+      "title": "M Satryo Muharram alias Adung Satria, atlet Karambol yang bikin musuh kena mental.",
+      "description": "typicode",
+      "category": "sports"
+    }
+  ],
   "product":[
     {
         "id":1,
