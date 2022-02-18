@@ -4,14 +4,13 @@ export async function getServerSideProps(context) {
     const { params, req, res, query } = context
     console.log("Tes header ", req.headers.cookie)
     console.log("Tes query ", query)
-    res.setHeader('Set-Cookie',['cookie=Vishwas'])
+    res.setHeader('Set-Cookie',['cookie=news-category'])
     const { category } = params
-    console.log("Tes regenerating product id ", category)
+    console.log("Tes regenerating news with ", category)
     const response = await fetch(
         `http://localhost:4000/news?category=${category}`
     )
     const data = await response.json()
-    console.log("Tes data ",data)
     return {
             props: {
             articles: data,
