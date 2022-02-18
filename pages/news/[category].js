@@ -1,7 +1,10 @@
 import styles from '../../styles/Ninjas.module.css'
 
 export async function getServerSideProps(context) {
-    const { params } = context
+    const { params, req, res, query } = context
+    console.log("Tes header ", req.headers.cookie)
+    console.log("Tes query ", query)
+    res.setHeader('Set-Cookie',['cookie=Vishwas'])
     const { category } = params
     console.log("Tes regenerating product id ", category)
     const response = await fetch(
