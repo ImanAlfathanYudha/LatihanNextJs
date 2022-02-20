@@ -22,16 +22,6 @@ function Dashboard() {
         fetchUserData();
     },[])
      console.log("Tes dashboardData final ", dashboardData)
-    // useEffect(()=>{
-    //     async function fetchUserData() {
-    //         const response = await fetch('http://localhost:4000/profile');
-    //         const data = await response.json()
-    //         setUserData(data)
-    //         setIsLoading(false)
-    //     }
-    //     fetchUserData()
-    //     console.log("Tes userData final ", userData)
-    // },[])
     console.log("Tes userData final ", userData)
 
     if (isLoading){
