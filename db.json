@@ -65,6 +65,24 @@
       "title": "Tahu isi kotoran manusia alias 'Taisi' menelan banyak korban",
       "description": "Makanan ekstrim nan beracun bernama taisi atau tahu isi kotoran..",
       "category": "hot"
+    },
+    {
+      "id": 8,
+      "title": "Mantap djiwa! Nasi mencret khas purworejo beneran enak!",
+      "description": "Nasi mencret khas puworejo memiliki keunikan ..",
+      "category": "kuliner"
+    },
+    {
+      "id": 9,
+      "title": "Li Yu Bei, pesulap indonesia pertama di acara Fool us Penn n Teller",
+      "description": "Dengan kemahiran memainkan kartu, Li Yu Bei yang memiliki nama..",
+      "category": "entertaiment"
+    },
+    {
+      "id": 10,
+      "title": "Nasi alpukat dari bu RT Suryani dengan saus kecombrang ala chef Barnold",
+      "description": "Gurihnya alpukat bu RT ..",
+      "category": "kuliner"
     }
   ],
   "product":[
@@ -103,6 +121,12 @@
       "title":"Pistol perubah tubuh sebagian",
       "price":5000000,
       "description":"Alat ini dapat merubah sebagian tubuh yang kita/orang lain miliki."
+    },
+    {
+      "id":7,
+      "title":"Pistol 9",
+      "price":5000000,
+      "description":"Pistol dewasa."
     }
   ]
 }
