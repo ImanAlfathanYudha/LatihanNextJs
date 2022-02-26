@@ -23,6 +23,36 @@
     "name": "Imam Alfatun",
     "username": "Alpantuni"
   },
+  "events": [
+    {
+      "id": 1,
+      "title": "Senam bersama yang dilakukan secara individu",
+      "description": "typicode",
+      "category": "sports",
+      "date": "April 25"
+    },
+    {
+      "id": 2,
+      "title": "Turnamen Karambol Nasional",
+      "description": "typicode",
+      "category": "sports",
+      "date": "April 15"
+    },
+    {
+      "id": 3,
+      "title": "Festival Kuliner Makanan Gagal",
+      "description": "typicode",
+      "category": "kuliner",
+      "date": "April 10"
+    },
+    {
+      "id": 4,
+      "title": "Try Out Akbar On the Road",
+      "description": "typicode",
+      "category": "academy",
+      "date": "April 30"
+    }
+  ],
   "news": [
     {
       "id": 1,
