@@ -22,13 +22,11 @@ function EventList({eventList}) {
         const data = await response.json()
         setEventData(data)
         router.push('event', undefined,{shallow:true})
-        // router.reload(window.location.pathname)
     }
 
     const fetchSportEvent = async()=>{
         const response = await fetch('http://localhost:4000/events?category=sports');
         const data = await response.json()
-        console.log("Tes fetchSportEvent ", data)
         setEventData(data)
         router.push('event?category=sports', undefined,{shallow:true})
     }
@@ -40,7 +38,6 @@ function EventList({eventList}) {
     {events.map((event)=>{
             return (
                 <div key={event.id}>
-                {/* <Link href={`news/${article.id}`} passHref={true}><h2>{article.id} {article.title} | {article.category}</h2></Link> */}
                 <ListLink data={event} type="event"></ListLink>
                 </div>
             )
