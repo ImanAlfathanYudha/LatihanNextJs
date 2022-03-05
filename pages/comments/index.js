@@ -4,8 +4,9 @@ function CommentsPage() {
     const [comments, setComment] = useState([])
     const [inputComment, setCommentInput] = useState('')
     var htmlButtonLoadComment = ""
+
     const fetchComments = async()=>{
-        const response = await fetch('/api/comments')
+        const response = await fetch('/api/comment/comments')
         const data = await response.json()
         setComment(data)
         console.log("Tes fetchComments ", data)
@@ -13,15 +14,15 @@ function CommentsPage() {
 
     const submitComment = async()=>{
         console.log("Tes submitComment invoked")
-        const response = await fetch('/api/comments',{
+        const response = await fetch('/api/comment/comments',{
             method:'POST',
             body: JSON.stringify({inputComment}),
             headers:{
                 'Content-Type':'application/json'
             }
-        })
-        window.alert("Comment berhasil diinput")
-        fetchComments()
+        },
+        fetchComments(),
+        window.alert("Comment berhasil diinput"))
         const data = await response.json()
         console.log("Tes submitComment data ", data)
     }
