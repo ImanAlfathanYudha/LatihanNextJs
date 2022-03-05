@@ -10,6 +10,9 @@ export const comments = [
     {
         id:3,
         text:"Dijual rumah dengan harga 700 jta rupiah di daerah beji. Hubungi 081308130813 jika minat."
+    },
+    {
+        id:4,
+        text:"Konten yang mendidik hanya utk orang terdidik."
     }
-
 ]
