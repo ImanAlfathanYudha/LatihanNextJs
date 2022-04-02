@@ -21,13 +21,20 @@ function CommentsPage() {
                 'Content-Type':'application/json'
             }
         },
-        fetchComments(),
-        window.alert("Comment berhasil diinput"))
+        window.alert("Comment berhasil diinput"),fetchComments())
         const data = await response.json()
         console.log("Tes submitComment data ", data)
     }
 
-    console.log("tes barangkeles ada comments ", comments)
+    const deleteComment = async (commentId) =>{
+        const response = await fetch('/api/comment/'+commentId,{
+            method:'DELETE'
+        })
+        const data = await response.json()
+        console.log("Tes deleteComment data ", data)
+        fetchComments()
+    }
+
     if (comments.length==0){
         htmlButtonLoadComment = <div><button onClick={fetchComments}>Load Comment</button></div>
     }
@@ -43,6 +50,7 @@ function CommentsPage() {
                 return(
                     <div key={comment.id}>
                     {comment.id} | {comment.text}
+                    <button onClick={()=>deleteComment(comment.id)}>Delete</button>
                 </div>
                 )
             })        
