@@ -14,6 +14,7 @@ export default function handler(req, res) {
         }
         console.log("Tes newComment ",newComment)
         comments.push(newComment)
+        console.log("Tes comments final ",comments)
         res.status(200).json
     }
 }
