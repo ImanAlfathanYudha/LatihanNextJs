@@ -3,6 +3,7 @@ import { comments } from "../../data/comments"
 function Comment({comment}) {
     return(
         <div>
+            <p>Comment detail pre-rendered</p>
             {comment.id} | {comment.text}
         </div>
     )
@@ -25,7 +26,8 @@ export async function getStaticPaths() {
                 commentId:'3'
             }
         }
-        ], fallback: true
+        //sengaja dibatesin karena pre-render
+        ], fallback: false
     }
 }
 
