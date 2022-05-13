@@ -5,6 +5,10 @@ body {
   color: #333;
   font-family: "Nunito";
 }
+
+h2{
+  color:orange;  
+}
 a {
   color: #333;
   text-decoration: none;
