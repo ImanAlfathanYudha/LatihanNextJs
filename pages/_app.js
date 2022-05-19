@@ -1,8 +1,8 @@
 import Layout from '../comps/layout'
 import '../styles/globals.css'
-// import '../styles/About.Module.scss'
-// import '../styles/Contact.Module.scss'
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../styles/About.Module.scss'
+import '../styles/Contact.Module.scss'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {ThemeProvider} from 'styled-components'
 
 const theme = {
@@ -10,6 +10,7 @@ const theme = {
     primary: '#35597D',
   },
 }
+
 function MyApp({ Component, pageProps }) {
   // return <Component {...pageProps} />
   return (
@@ -21,8 +22,8 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
+export default MyApp
 // ntar jgn lupa ketik
 // npm i styled-components
 // npm i sass
 // npm install --save bootstrap@^4.0.0-alpha.6 react-bootstrap@^0.32.1
-export default MyApp

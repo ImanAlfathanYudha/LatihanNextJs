@@ -5,15 +5,15 @@ const Title = styled.h1`
     color:${({theme})=>theme.colors.primary};`
 
 // ntar dibuka
-// const NormalText = styled.p`
-//     font-size: 20px;
-//     color: #eaaaf2;` 
+const NormalText = styled.p`
+    font-size: 20px;
+    color: #eaaaf2;` 
 
 function CSSJS() {
     return(
         <div>
             <Title>Styled-Components</Title>
-            {/* <NormalText>CSS hehe</NormalText> */}
+            <NormalText>CSS kadang muncul kadang engga hehe</NormalText>
         </div>
         
         // <h2 style={{olor:'red'}}>CSS IN JS, HELLO WORLD!</h2>
