@@ -9,6 +9,11 @@ const theme = {
   colors: {
     primary: '#35597D',
   },
+  fontSize: {
+    big: '50px',
+    mid: '30px',
+    small: '12px'
+  }
 }
 
 function MyApp({ Component, pageProps }) {
