@@ -4,9 +4,18 @@ const Title = styled.h1`
     font-size: 50px;
     color:${({theme})=>theme.colors.primary};`
 
+// ntar dibuka
+// const NormalText = styled.p`
+//     font-size: 20px;
+//     color: #eaaaf2;` 
+
 function CSSJS() {
     return(
-        <Title>Styled-Components</Title>
+        <div>
+            <Title>Styled-Components</Title>
+            {/* <NormalText>CSS hehe</NormalText> */}
+        </div>
+        
         // <h2 style={{olor:'red'}}>CSS IN JS, HELLO WORLD!</h2>
     )
 }
