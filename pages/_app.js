@@ -1,8 +1,8 @@
 import Layout from '../comps/layout'
 import '../styles/globals.css'
-import '../styles/About.Module.scss'
-import '../styles/Contact.Module.scss'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+// import '../styles/About.Module.scss'
+// import '../styles/Contact.Module.scss'
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {ThemeProvider} from 'styled-components'
 
 const theme = {
