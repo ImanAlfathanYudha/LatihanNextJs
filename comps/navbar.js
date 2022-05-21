@@ -11,6 +11,7 @@ const Navbar= () => {
            <Link href="/about"><a>About</a></Link>
            <Link href="/ninjas"><a>Ninja Listing</a></Link>
            <Link href="/post"><a>Post</a></Link>
+           <Link href="/css-in-js"><a>CSS JS</a></Link>
        </nav>
     )
 }
