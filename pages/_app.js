@@ -1,5 +1,6 @@
 import Layout from '../comps/layout'
 import '../styles/globals.css'
+import '../styles/layout.css'
 import '../styles/About.Module.scss'
 import '../styles/Contact.Module.scss'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
@@ -18,6 +19,13 @@ const theme = {
 
 function MyApp({ Component, pageProps }) {
   // return <Component {...pageProps} />
+  if (Component.getLayout) {
+    return Component.getLayout(
+    <ThemeProvider theme={theme}>
+    <Component {...pageProps} />
+    </ThemeProvider>
+    )
+  }
   return (
     <Layout>
       <ThemeProvider theme={theme}>
