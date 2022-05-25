@@ -27,10 +27,10 @@ function CSSJS() {
 export default CSSJS
 
 // ntar dinyalain, ya.
-// CSSJS.getLayout = function PageLayout(page) {
-//     return (<>
-//       <Header/>
-//       {page}
-//       </>
-//     )
-// }
+CSSJS.getLayout = function PageLayout(page) {
+    return (<>
+      <Header/>
+      {page}
+      </>
+    )
+}
