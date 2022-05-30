@@ -3,7 +3,7 @@ import img from '../public/pantoler.png'
 
 function PetsPage() {
     return (<div>
-        <h1 className='content-about'>Pets isi Images</h1>
+        <h2>About Page </h2>
         <Image src={img} placeholder='blur' blurDataURL={'../public/vercel.svg'} alt='image' width='280' height='420'/>
         {['1','2','3','4','5'].map((path)=>{
             return (<div key={path}>
