@@ -47,7 +47,7 @@ const NewsArticleDetail= ({newsArticleDetail}) => {
     if (router.isFallback) {
         return <h1>Loading product...</h1>
     }
-    console.log("Tes newsArticleDetail ",newsArticleDetail)
+    console.log("Tes newsArticleDetail hehe ",newsArticleDetail)
     return (
         <div>
         <h1>Article Pages Detail &#x2611;</h1>
