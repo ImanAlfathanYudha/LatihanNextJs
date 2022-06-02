@@ -34,7 +34,7 @@
     {
       "id": 2,
       "title": "Turnamen Karambol Nasional",
-      "description": "typicode",
+      "description": "Turnamen Karambol Nasional berhadiah jutaan rupiah",
       "category": "sports",
       "date": "April 15"
     },
@@ -48,14 +48,14 @@
     {
       "id": 4,
       "title": "Try Out Akbar On the Road",
-      "description": "Try out pinggir jalan",
+      "description": "Try out pinggir jalan bersama khusus SMA/SMK",
       "category": "academy",
       "date": "April 30"
     },
     {
       "id": 5,
       "title": "DJ Desa National Tour",
-      "description": "typicode",
+      "description": "Pertama kali di INdonesia",
       "category": "music",
       "date": "June 30"
     },
@@ -71,19 +71,19 @@
     {
       "id": 1,
       "title": "Senam bersama yang dilakukan secara individu",
-      "description": "typicode",
+      "description": "Pada tanggal 15 April 2017 kemarin, diadakanlah..",
       "category": "sports"
     },
     {
       "id": 2,
       "title": "Atlet Karambol RI mendapatkan medali emas di Eropa",
-      "description": "typicode",
+      "description": "M Satria Muharram alias Adung Satria",
       "category": "sports"
     },
     {
       "id": 3,
       "title": "M Satria Muharram alias Adung Satria, atlet Karambol yang bikin musuh kena mental.",
-      "description": "typicode",
+      "description": "Kemahiran bermain karambol saat kecil membuat...",
       "category": "sports"
     },
     {
