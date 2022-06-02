@@ -6,7 +6,7 @@ const ListLink= ({data, type}) => {
     if (type=="product") {
         linkHTML = <Link href={`product/${data.id}`} passHref={true}><h3>{data.id} {data.title}</h3></Link>
     } else if (type=="news"){
-        linkHTML = <Link href={`news/${data.id}`} passHref={true}><h3>{data.id} {data.title} | {data.category}</h3></Link>
+        linkHTML = <Link href={`news/detail/${data.id}`} passHref={true}><h3>{data.id} {data.title} | {data.category}</h3></Link>
     } else if (type=="event"){
         linkHTML = <div><h2>
             {data.id} {data.title} | {data.date} | {data.category}
